@@ -38,5 +38,10 @@ app.UseAuthorization();
 // Configure le routage des contrôleurs
 app.MapControllers();
 
+var configuration = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json")
+    .AddJsonFile("appsettings.Development.json", optional: true)
+    .Build();
+
 // Exécute l'application.
 app.Run();

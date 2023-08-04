@@ -7,7 +7,7 @@ namespace MyAI.Controllers
     [Route("[controller]")]
     public class OpenAiController : ControllerBase
     {
-        // Déclaration d'une variable pour le journaliseur
+         //Déclaration d'une variable pour le journaliseur
         private readonly ILogger<OpenAiController> _logger;
 
         // Déclaration d'une variable pour le service OpenAI
